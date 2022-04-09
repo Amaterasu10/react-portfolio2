@@ -1,0 +1,10 @@
+.globalNav {
+    background-color: white;
+    width: fit-content;  
+    padding: 10px;
+
+    &__li {
+        display: flex;
+        justify-content: center;
+    }
+}

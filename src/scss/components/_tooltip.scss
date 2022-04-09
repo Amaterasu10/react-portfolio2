@@ -1,0 +1,53 @@
+.tooltip {
+    position: relative;
+    display: grid;
+    place-content: center;
+    width: 50px;
+    height: 50px;
+
+    &:hover {
+        background-color: gold;
+    }
+    
+    &__text {
+        visibility: hidden;
+        width: 120px;
+        background-color: black;
+        color: #fff;
+        text-align: center;
+        border-radius: 6px;
+        padding: 5px 0;
+    
+        &.right {
+            /* Position the tooltip */
+            position: absolute;
+            z-index: 1;
+            top: 10px;
+            left: 120%;
+        }
+
+        &.top {
+            /* Position the tooltip */
+            position: absolute;
+            z-index: 1;
+            top: -70%;
+            left: -70%;
+        }
+    }
+    
+    &:hover &__text {
+        visibility: visible;
+    }
+
+    &.bordered {
+        border: 1px solid gray;
+    }
+
+    &.card__overlay-content-tooltip {
+        margin: 1em;
+    }
+
+    &.globalNav__tooltip {
+        margin-bottom: 1em;
+    }
+}
