@@ -1,22 +1,30 @@
 import { Link } from "react-router-dom"
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import {faCoffee } from '@fortawesome/free-solid-svg-icons'
+import {faHome, faUser } from '@fortawesome/free-solid-svg-icons'
+import Tooltip from "./Tooltip"
 
-
-export default function GlobalNav() {
+export default function globalNav() {
   return (
-    <nav className="GlobalNav">
-      <ul className="GlobalNav__ul">
+    <nav className="globalNav">
+      <ul className="globalNav__ul">
 
-        <li className="GlobalNav__li">
-          <Link to="/" className="GlobalNav__link">Home</Link>
+        <li className="globalNav__li">
+          <Link to="/" className="globalNav__link">
+            <Tooltip tip="Home" className="globalNav__tooltip bordered">
+              <FontAwesomeIcon icon={faHome} className="FAIcon globalNav__icon" />
+            </Tooltip>
+          </Link>
         </li>
 
-        <li className="GlobalNav__li">
-          <Link to="about" className="GlobalNav__link">About</Link>
+        <li className="globalNav__li" >
+          <Link to="about" className="globalNav__link">
+            <Tooltip tip="About" className="globalNav__tooltip bordered">
+              <FontAwesomeIcon icon={faUser} className="FAIcon globalNav__icon" />
+            </Tooltip>
+          </Link>
         </li>
-        <FontAwesomeIcon icon={faCoffee} />
+
       </ul>
     </nav>
   )
