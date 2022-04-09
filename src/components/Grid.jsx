@@ -1,9 +1,9 @@
 import React from 'react'
 
-export default function Grid() {
+export default function Grid({ children }) {
   return (
-    <div className='grid'>
-        
-    </div>
+    <section className='grid'>
+      {children}
+    </section>
   )
 }
