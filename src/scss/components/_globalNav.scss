@@ -1,8 +1,7 @@
 .globalNav {
-    background-color: white;
-    width: fit-content;  
-    padding: 10px;
-
+    z-index: 1;
+    padding: 1em;
+    position: fixed;
     &__li {
         display: flex;
         justify-content: center;
