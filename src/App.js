@@ -6,9 +6,9 @@ import GlobalNav from './components/GlobalNav';
 function App() {
   return (
     <div className="App">
-      <GlobalNav />
+      {/* <GlobalNav /> */}
 
-      <main>
+      <main >
         <Outlet/>
       </main>
     </div>
