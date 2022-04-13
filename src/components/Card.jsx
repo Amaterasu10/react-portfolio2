@@ -6,7 +6,7 @@ export default function Card({ img, className="" }) {
   return (
     <div className={"card " + className}>   
       <div className='card__front-side'>
-        <img className="card__image" src={img} />
+        <img className="card__image" src={img} alt=""/>
 
         <h2 className="card__title">title</h2>
 
