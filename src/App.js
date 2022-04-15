@@ -1,7 +1,7 @@
 import './scss/styles.min.css';
 
 import { Outlet } from 'react-router-dom';
-import GlobalNav from './components/GlobalNav';
+// import GlobalNav from './components/GlobalNav';
 
 function App() {
   return (
